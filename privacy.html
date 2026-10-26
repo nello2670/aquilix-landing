@@ -11,10 +11,13 @@
 <meta property="og:description" content="Informativa sulla privacy di Aquilix — Nello Montaquila: come vengono trattati i dati personali dei visitatori e dei clienti." />
 <meta property="og:type" content="website" />
 
+<link rel="icon" type="image/png" href="./assets/logo-mark-v2.png" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
+<script>try{var s=localStorage.getItem('aquilix-theme');if(s==='dark'||s==='light')document.documentElement.setAttribute('data-theme',s)}catch(e){}</script>
 <link rel="stylesheet" href="./base.css" />
 <link rel="stylesheet" href="./style.css" />
 </head>
@@ -182,77 +185,7 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  const t = document.querySelector('[data-theme-toggle]'),
-    r = document.documentElement;
-  let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
-  r.setAttribute('data-theme', d);
-  updateToggleIcon();
-  t && t.addEventListener('click', () => {
-    d = d === 'dark' ? 'light' : 'dark';
-    r.setAttribute('data-theme', d);
-    updateToggleIcon();
-  });
-  function updateToggleIcon() {
-    if (!t) return;
-    t.setAttribute('aria-label', 'Attiva tema ' + (d === 'dark' ? 'chiaro' : 'scuro'));
-    t.innerHTML = d === 'dark'
-      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-  }
-})();
-
-// Header show/hide on scroll
-(function () {
-  const header = document.getElementById('site-header');
-  let lastY = window.scrollY;
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    header.classList.toggle('header--scrolled', y > 8);
-    if (y > lastY && y > 120) {
-      header.classList.add('header--hidden');
-    } else {
-      header.classList.remove('header--hidden');
-    }
-    lastY = y;
-  }, { passive: true });
-})();
-
-// Mobile menu toggle
-(function () {
-  const btn = document.getElementById('navToggle');
-  btn && btn.addEventListener('click', () => {
-    const open = document.body.classList.toggle('menu-open');
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
-  });
-  document.querySelectorAll('.mobile-menu a').forEach((a) => {
-    a.addEventListener('click', () => {
-      document.body.classList.remove('menu-open');
-      btn && btn.setAttribute('aria-expanded', 'false');
-    });
-  });
-})();
-
-// FAQ accordion
-(function () {
-  document.querySelectorAll('.faq-item').forEach((item) => {
-    const btn = item.querySelector('.faq-question');
-    btn.addEventListener('click', () => {
-      const isOpen = item.getAttribute('data-open') === 'true';
-      document.querySelectorAll('.faq-item').forEach((i) => {
-        i.setAttribute('data-open', 'false');
-        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        item.setAttribute('data-open', 'true');
-        btn.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-})();
-</script>
+<script src="./main.js"></script>
 
 </body>
 </html>

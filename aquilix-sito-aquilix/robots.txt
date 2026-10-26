@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://aquilix.it/sitemap.xml

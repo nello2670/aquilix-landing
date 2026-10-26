@@ -185,9 +185,6 @@ section {
   border-radius: var(--radius-full);
   margin-bottom: var(--space-5);
 }
-[data-theme='dark'] .section-eyebrow,
-@media (prefers-color-scheme: dark) {
-}
 [data-theme='dark'] .section-eyebrow {
   color: var(--color-primary);
 }
