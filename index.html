@@ -38,7 +38,6 @@
         <li><a href="#prodotti">Prodotti</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#chi-sono">Chi sono</a></li>
-        <li><a href="#referenze">Referenze</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
@@ -60,7 +59,6 @@
       <a href="#prodotti">Prodotti</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#chi-sono">Chi sono</a>
-      <a href="#referenze">Referenze</a>
       <a href="#faq">FAQ</a>
       <a href="#contatti" class="btn btn--primary">Contattami</a>
     </nav>
@@ -174,6 +172,7 @@
           <span class="product-tag">Starter</span>
           <h3>Strumento su misura</h3>
           <p>Un tool digitale mirato a risolvere un problema specifico del tuo lavoro quotidiano.</p>
+          <p class="product-price">da <strong>800&nbsp;&euro;</strong></p>
           <ul role="list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Analisi delle esigenze</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sviluppo rapido e mirato</li>
@@ -185,6 +184,7 @@
           <span class="product-tag">Il più richiesto</span>
           <h3>Progetto su misura completo</h3>
           <p>Software o piattaforma digitale progettata e sviluppata interamente attorno alla tua attività.</p>
+          <p class="product-price">da <strong>3.500&nbsp;&euro;</strong></p>
           <ul role="list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Consulenza e progettazione</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sviluppo e test dedicati</li>
@@ -196,6 +196,7 @@
           <span class="product-tag">Continuità</span>
           <h3>Supporto e manutenzione</h3>
           <p>Aggiornamenti, nuove funzionalità e assistenza continua per far crescere lo strumento nel tempo.</p>
+          <p class="product-price">da <strong>90&nbsp;&euro;</strong> al mese</p>
           <ul role="list">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Monitoraggio e correzioni</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Nuove funzionalità su richiesta</li>
@@ -258,119 +259,222 @@
   </section>
 
   <!-- ============ PORTFOLIO ============ -->
+  <!-- Solo lavori veri. Ogni scheda dichiara il suo stato: Progetto cliente, Online, Demo,
+       Prototipo, In progettazione. Aggiornato il 15/11/2026. -->
   <section id="portfolio" class="portfolio-section">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="section-eyebrow">Portfolio</span>
-        <h2 class="section-title">Esempi di progetti realizzabili</h2>
-        <p class="section-lede">Concept illustrativi del tipo di lavoro che realizzo &mdash; verranno sostituiti con casi reali non appena i primi progetti saranno consegnati.</p>
+        <h2 class="section-title">Lavori realizzati</h2>
+        <p class="section-lede">Progetti veri, non concept. Ogni scheda dice a che punto &egrave;: realizzato per un cliente, online, demo o prototipo.</p>
       </div>
 
+      <!-- Gruppo 1: studi professionali e centri servizi -->
+      <h3 class="portfolio-group-title">Per studi professionali e centri servizi</h3>
       <div class="portfolio-grid">
         <article class="portfolio-card">
-          <div class="portfolio-media">
-            <img src="./assets/portfolio-1.jpg" alt="Concept di dashboard software su misura con grafici e statistiche" loading="lazy" width="640" height="480" />
-          </div>
           <div class="portfolio-body">
-            <span class="product-tag">Software su misura</span>
-            <h3>Dashboard gestionale per uno studio professionale</h3>
-            <p>Un pannello di controllo unico per monitorare progetti, scadenze e clienti, pensato per sostituire fogli di calcolo sparsi e comunicazioni via email.</p>
+            <div class="portfolio-top">
+              <span class="product-tag">Software su misura</span>
+              <span class="portfolio-status">Progetto cliente</span>
+            </div>
+            <h3>Gestionale per uno studio di servizi fiscali online</h3>
+            <p>Un portale unico dove i clienti dello studio gestiscono fatture elettroniche, documenti fiscali e scadenze, chiedono assistenza e acquistano i pacchetti di servizi. Calcola anche la stima di tasse e contributi per chi &egrave; in regime forfettario.</p>
             <ul class="portfolio-tags" role="list">
-              <li>Interfaccia su misura</li>
-              <li>Reportistica automatica</li>
+              <li>Fatture e scadenze</li>
+              <li>Assistenza con AI</li>
+              <li>Pagamenti online</li>
             </ul>
           </div>
         </article>
 
         <article class="portfolio-card">
-          <div class="portfolio-media">
-            <img src="./assets/portfolio-2.jpg" alt="Concept di flusso di automazione tra strumenti digitali" loading="lazy" width="640" height="480" />
-          </div>
           <div class="portfolio-body">
-            <span class="product-tag">Automazioni</span>
-            <h3>Automazione ordini per un piccolo e-commerce</h3>
-            <p>Collegamento automatico tra il modulo ordini, la fatturazione e l'invio delle email di conferma, per eliminare le operazioni manuali ripetitive.</p>
+            <div class="portfolio-top">
+              <span class="product-tag">Software su misura</span>
+              <span class="portfolio-status">Demo</span>
+            </div>
+            <h3>Portale presenze per consulenti del lavoro</h3>
+            <p>Le aziende clienti inviano assenze e straordinari dal portale, anche caricando un file Excel, invece di mandarli per email. Lo studio li controlla e li esporta in un file pronto per Paco. Documenti mensili per aziende e dipendenti, con vista da smartphone per i dipendenti.</p>
             <ul class="portfolio-tags" role="list">
-              <li>Integrazione strumenti</li>
-              <li>Notifiche automatiche</li>
+              <li>Import Excel e CSV</li>
+              <li>Export per Paco</li>
+              <li>Area dipendenti</li>
             </ul>
           </div>
         </article>
 
         <article class="portfolio-card">
-          <div class="portfolio-media">
-            <img src="./assets/portfolio-3.jpg" alt="Concept di prodotto digitale pronto all'uso in vendita online" loading="lazy" width="640" height="480" />
-          </div>
           <div class="portfolio-body">
-            <span class="product-tag">Prodotti digitali</span>
-            <h3>Template digitale pronto all'uso per freelance</h3>
-            <p>Un pacchetto scaricabile con struttura, componenti e documentazione, pensato per essere personalizzato e usato da subito senza competenze tecniche.</p>
+            <div class="portfolio-top">
+              <span class="product-tag">Software su misura</span>
+              <span class="portfolio-status">In progettazione</span>
+            </div>
+            <h3>Gestionale pratiche per un centro servizi</h3>
+            <p>Clienti, pratiche e scadenze in un'unica schermata, al posto di cartelle e appunti sparsi: rinnovi di PEC, SPID e firma digitale in arrivo, pratiche ferme da troppi giorni, documenti ancora da chiedere al cliente.</p>
             <ul class="portfolio-tags" role="list">
-              <li>Documentazione inclusa</li>
-              <li>Pronto all'uso</li>
+              <li>Scadenzario</li>
+              <li>Stato delle pratiche</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Software su misura</span>
+              <span class="portfolio-status">Prototipo</span>
+            </div>
+            <h3>Gestionale per la finanza agevolata</h3>
+            <p>Clienti, bandi e pratiche in un solo posto: abbinamento automatico tra clienti e bandi adatti, compilazione guidata dei documenti e una bacheca per seguire ogni pratica dall'inizio alla fine.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Pi&ugrave; utenti</li>
+              <li>Bacheca pratiche</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Web app</span>
+              <span class="portfolio-status">Online</span>
+            </div>
+            <h3>Punteggio Scuola Italia</h3>
+            <p>Simulatore di punteggio per personale ATA e docenti: anni di servizio, titoli e abilitazioni. Con orientamento sui percorsi universitari e abilitanti in CFU e notizie sulla scuola pronte da condividere su Facebook.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Simulatore</li>
+              <li>Notizie</li>
             </ul>
           </div>
         </article>
       </div>
-    </div>
-  </section>
 
-  <!-- ============ REFERENZE ============ -->
-  <section id="referenze">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="section-eyebrow">Referenze</span>
-        <h2 class="section-title">Cosa dicono di chi lavora con Aquilix</h2>
+      <!-- Gruppo 2: software e SaaS -->
+      <h3 class="portfolio-group-title">Software e SaaS</h3>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">SaaS</span>
+              <span class="portfolio-status">Online</span>
+            </div>
+            <h3>Bandi AI Finder</h3>
+            <p>Trova bandi, incentivi e contributi a fondo perduto adatti al profilo di imprese e privati, senza passare ore sui siti istituzionali.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Abbinamento automatico</li>
+              <li>Schede bando</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">SaaS</span>
+              <span class="portfolio-status">Online</span>
+            </div>
+            <h3>Gestore Affitti Facile</h3>
+            <p>Per chi affitta casa a breve termine: importa le prenotazioni dai portali, prepara i file per le comunicazioni obbligatorie sugli ospiti e calcola la tassa di soggiorno del mese.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Import calendari</li>
+              <li>Tassa di soggiorno</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Web app</span>
+              <span class="portfolio-status">Online</span>
+            </div>
+            <h3>Client Hub Dashboard</h3>
+            <p>Gestione progetti per agenzie digitali: clienti, siti, funnel e SaaS in un unico pannello, con accessi per pi&ugrave; persone e statistiche di visite e conversioni per ogni progetto.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Multiutente</li>
+              <li>Statistiche</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">E-commerce</span>
+              <span class="portfolio-status">Prototipo</span>
+            </div>
+            <h3>Cialda Match</h3>
+            <p>E-commerce di cialde e capsule con un selettore guidato che trova quelle compatibili con il modello della tua macchina, e abbonamenti per ricevere le consegne in automatico.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Selettore guidato</li>
+              <li>Abbonamenti</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Web app</span>
+              <span class="portfolio-status">Prototipo</span>
+            </div>
+            <h3>MultiSell</h3>
+            <p>Un solo annuncio pubblicato su eBay, Vinted, Wallapop e Subito: testi e prezzi adattati a ogni piattaforma, commissioni e guadagno netto calcolati, storico di cosa hai venduto e dove.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Quattro marketplace</li>
+              <li>Guadagno netto</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Web app</span>
+              <span class="portfolio-status">Prototipo</span>
+            </div>
+            <h3>LinkedIn Pro Architect</h3>
+            <p>Per chi cura i profili LinkedIn dei clienti: questionario iniziale, profilo ottimizzato con punteggio, post e articoli generati da modelli e calendario di pubblicazione con approvazione del cliente.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Profilo ottimizzato</li>
+              <li>Piano editoriale</li>
+            </ul>
+          </div>
+        </article>
       </div>
 
-      <div class="testimonial-grid">
-        <figure class="testimonial-card">
-          <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 7c-2.2 0-4 1.8-4 4v6h6v-6H6c0-1.1.9-2 2-2V7zm11 0c-2.2 0-4 1.8-4 4v6h6v-6h-3c0-1.1.9-2 2-2V7z"/></svg>
-          <blockquote>"Cercavo un software su misura per il mio flusso di lavoro e Nello ha capito subito le mie esigenze. Ora ho uno strumento che si adatta a me, non il contrario."</blockquote>
-          <figcaption>
-            <div class="testimonial-avatar">MR</div>
-            <div>
-              <strong>Marco Ricci</strong>
-              <span>Titolare &middot; Studio Ricci &amp; Associati</span>
+      <!-- Gruppo 3: siti e strumenti AI -->
+      <h3 class="portfolio-group-title">Siti e strumenti con l'intelligenza artificiale</h3>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Landing page</span>
+              <span class="portfolio-status">Realizzata</span>
             </div>
-          </figcaption>
-        </figure>
+            <h3>Landing per un corso di AI one-to-one</h3>
+            <p>Pagina di vendita per un corso in presenza sull'uso dell'intelligenza artificiale nel lavoro, realizzata con CS Form: un messaggio chiaro e una sola chiamata all'azione.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Copy orientato alla vendita</li>
+            </ul>
+          </div>
+        </article>
 
-        <figure class="testimonial-card">
-          <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 7c-2.2 0-4 1.8-4 4v6h6v-6H6c0-1.1.9-2 2-2V7zm11 0c-2.2 0-4 1.8-4 4v6h6v-6h-3c0-1.1.9-2 2-2V7z"/></svg>
-          <blockquote>"Grazie all'automazione che mi ha creato, ho eliminato ore di lavoro ripetitivo ogni settimana. I dati passano da un tool all'altro senza che io debba più muovere un dito."</blockquote>
-          <figcaption>
-            <div class="testimonial-avatar">AL</div>
-            <div>
-              <strong>Alessia Lombardi</strong>
-              <span>E-commerce Manager &middot; NordVerde Store</span>
+        <article class="portfolio-card">
+          <div class="portfolio-body">
+            <div class="portfolio-top">
+              <span class="product-tag">Automazioni AI</span>
+              <span class="portfolio-status">Strumento interno</span>
             </div>
-          </figcaption>
-        </figure>
-
-        <figure class="testimonial-card">
-          <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 7c-2.2 0-4 1.8-4 4v6h6v-6H6c0-1.1.9-2 2-2V7zm11 0c-2.2 0-4 1.8-4 4v6h6v-6h-3c0-1.1.9-2 2-2V7z"/></svg>
-          <blockquote>"Il prodotto digitale che ho acquistato era pronto all'uso e ben documentato: l'ho integrato nel mio lavoro in un pomeriggio, senza bisogno di assistenza."</blockquote>
-          <figcaption>
-            <div class="testimonial-avatar">SF</div>
-            <div>
-              <strong>Sara Ferretti</strong>
-              <span>Fondatrice &middot; Ferretti Comunicazione</span>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure class="testimonial-card">
-          <svg class="testimonial-quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 7c-2.2 0-4 1.8-4 4v6h6v-6H6c0-1.1.9-2 2-2V7zm11 0c-2.2 0-4 1.8-4 4v6h6v-6h-3c0-1.1.9-2 2-2V7z"/></svg>
-          <blockquote>"La consulenza tecnica mi ha aiutato a capire quale soluzione aveva davvero senso per la mia attività, prima ancora di iniziare a spendere in sviluppo. Chiarezza e onestà su ogni scelta."</blockquote>
-          <figcaption>
-            <div class="testimonial-avatar">GC</div>
-            <div>
-              <strong>Giulia Conti</strong>
-              <span>Fondatrice &middot; Conti Design Studio</span>
-            </div>
-          </figcaption>
-        </figure>
+            <h3>Company Brain</h3>
+            <p>Il cervello aziendale di Aquilix: tutta la conoscenza dell'attivit&agrave; in note collegate tra loro, con una ricerca che gira sul computer e risponde solo con quello che c'&egrave; scritto, senza inventare.</p>
+            <ul class="portfolio-tags" role="list">
+              <li>Ricerca semantica</li>
+              <li>Dati in locale</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -462,7 +566,6 @@
         <a href="#prodotti">Prodotti</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#chi-sono">Chi sono</a>
-        <a href="#referenze">Referenze</a>
         <a href="#faq">FAQ</a>
       </div>
       <div class="footer-col">

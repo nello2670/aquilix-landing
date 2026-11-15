@@ -1309,3 +1309,63 @@ body.menu-open .mobile-menu {
   margin-bottom: 0;
   color: var(--color-text);
 }
+
+/* ===== Portfolio: gruppi e stato del progetto (aggiunto 15/11/2026) ===== */
+.portfolio-group-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  margin: var(--space-12) 0 var(--space-6);
+}
+.portfolio-group-title:first-of-type {
+  margin-top: 0;
+}
+.portfolio-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+.portfolio-status {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-3);
+}
+
+/* ===== Pacchetti: prezzo di partenza (aggiunto 15/11/2026, dal listino AQUILIX) ===== */
+.product-price {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.product-price strong {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+/* ===== Correzioni di leggibilita' (15/11/2026) =====
+   1. Tema scuro: le etichette arancioni avevano testo scuro su fondo scuro.
+   2. Tema chiaro: nella card "Il piu' richiesto" il titolo era blu su blu, perche'
+      le regole generiche .product-card h3 / p venivano dopo e la sovrascrivevano. */
+[data-theme='dark'] .product-card:not(.product-card--featured) .product-tag,
+[data-theme='dark'] .portfolio-card .product-tag {
+  color: var(--color-primary);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .product-card:not(.product-card--featured) .product-tag,
+  :root:not([data-theme]) .portfolio-card .product-tag {
+    color: var(--color-primary);
+  }
+}
+.product-card.product-card--featured h3,
+.product-card.product-card--featured .product-price strong {
+  color: #ffffff;
+}
+.product-card.product-card--featured p,
+.product-card.product-card--featured li {
+  color: rgba(255, 255, 255, 0.82);
+}
